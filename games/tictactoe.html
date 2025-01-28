@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tic-Tac-Toe</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/tictactoe.css">
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;700&family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="background-animation"></div>
+    <header>
+        <nav>
+            <ul class="nav-links">
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="tictactoe.html" class="active">Tic-Tac-Toe</a></li>
+                <li><a href="snake.html">Snake</a></li>
+                <li><a href="minesweeper.html">Minesweeper</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="game-container">
+        <h1>Tic-Tac-Toe</h1>
+        
+        <div class="game-options">
+            <div class="mode-select">
+                <button class="mode-btn active" data-mode="local">Local Multiplayer</button>
+                <button class="mode-btn" data-mode="ai">VS AI</button>
+            </div>
+            
+            <div class="difficulty-select" style="display: none;">
+                <button class="difficulty-btn" data-difficulty="easy">Easy</button>
+                <button class="difficulty-btn" data-difficulty="medium">Medium</button>
+                <button class="difficulty-btn" data-difficulty="hard">Hard</button>
+                <button class="difficulty-btn" data-difficulty="impossible">Impossible</button>
+            </div>
+        </div>
+
+        <div class="game-status">
+            <p class="status-text">Player X's turn</p>
+        </div>
+
+        <div class="game-board">
+            <div class="cell" data-index="0"></div>
+            <div class="cell" data-index="1"></div>
+            <div class="cell" data-index="2"></div>
+            <div class="cell" data-index="3"></div>
+            <div class="cell" data-index="4"></div>
+            <div class="cell" data-index="5"></div>
+            <div class="cell" data-index="6"></div>
+            <div class="cell" data-index="7"></div>
+            <div class="cell" data-index="8"></div>
+        </div>
+
+        <button class="reset-btn">Reset Game</button>
+    </main>
+
+    <footer>
+        <p>&copy; Made with ❤️ by Io</p>
+    </footer>
+
+    <script src="../js/tictactoe.js"></script>
+</body>
+</html> 

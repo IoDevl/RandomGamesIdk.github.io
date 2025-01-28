@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Minesweeper</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/minesweeper.css">
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;700&family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="background-animation"></div>
+    <header>
+        <nav>
+            <ul class="nav-links">
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="tictactoe.html">Tic-Tac-Toe</a></li>
+                <li><a href="snake.html">Snake</a></li>
+                <li><a href="minesweeper.html" class="active">Minesweeper</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="game-container">
+        <h1>Minesweeper</h1>
+        
+        <div class="game-controls">
+            <div class="difficulty-select">
+                <button class="difficulty-btn active" data-difficulty="beginner">Beginner</button>
+                <button class="difficulty-btn" data-difficulty="intermediate">Intermediate</button>
+                <button class="difficulty-btn" data-difficulty="expert">Expert</button>
+            </div>
+
+            <div class="game-info">
+                <div class="mines-left">
+                    <span class="icon">💣</span>
+                    <span id="minesLeft">10</span>
+                </div>
+                <button id="resetBtn" class="reset-btn">😊</button>
+                <div class="timer">
+                    <span class="icon">⏱️</span>
+                    <span id="timer">0</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="game-board-container">
+            <div class="game-board" id="gameBoard"></div>
+        </div>
+
+        <div class="controls-info">
+            <p>Left Click: Reveal Cell</p>
+            <p>Right Click: Flag Mine</p>
+        </div>
+
+        <div class="game-over" style="display: none;">
+            <h2>Game Over!</h2>
+            <p>Time: <span id="finalTime">0</span> seconds</p>
+            <button id="playAgainBtn" class="game-btn">Play Again</button>
+        </div>
+
+        <div class="game-won" style="display: none;">
+            <h2>Congratulations!</h2>
+            <p>You won in <span id="winTime">0</span> seconds!</p>
+            <button id="newGameBtn" class="game-btn">New Game</button>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; Made with ❤️ by Io</p>
+    </footer>
+
+    <script src="../js/minesweeper.js"></script>
+</body>
+</html> 

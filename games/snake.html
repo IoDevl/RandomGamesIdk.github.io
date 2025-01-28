@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Snake</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/snake.css">
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;700&family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="background-animation"></div>
+    <header>
+        <nav>
+            <ul class="nav-links">
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="tictactoe.html">Tic-Tac-Toe</a></li>
+                <li><a href="snake.html" class="active">Snake</a></li>
+                <li><a href="minesweeper.html">Minesweeper</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="game-container">
+        <h1>Snake</h1>
+        
+        <div class="game-info">
+            <div class="score">Score: <span id="score">0</span></div>
+            <div class="high-score">High Score: <span id="highScore">0</span></div>
+        </div>
+
+        <div class="controls-info">
+            <p>⌨️ Keyboard required to play</p>
+            <p>Use Arrow Keys or WASD to control the snake</p>
+        </div>
+
+        <canvas id="gameCanvas"></canvas>
+
+        <div class="controls">
+            <button id="startBtn" class="game-btn">Start Game</button>
+            <button id="pauseBtn" class="game-btn" style="display: none;">Pause</button>
+        </div>
+
+        <div class="mobile-controls">
+            <button id="upBtn" class="direction-btn">↑</button>
+            <div class="horizontal-controls">
+                <button id="leftBtn" class="direction-btn">←</button>
+                <button id="rightBtn" class="direction-btn">→</button>
+            </div>
+            <button id="downBtn" class="direction-btn">↓</button>
+        </div>
+
+        <div class="game-over" style="display: none;">
+            <h2>Game Over!</h2>
+            <p>Your Score: <span id="finalScore">0</span></p>
+            <button id="restartBtn" class="game-btn">Play Again</button>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; Made with ❤️ by Io</p>
+    </footer>
+
+    <script src="../js/snake.js"></script>
+</body>
+</html> 
